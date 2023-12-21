@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: pink; */
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .center {
+        width: 100vw;
+        height: 100vh;
+        /* background-color: pink; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.img {
+    background-image: url('../public/pic/start.png');
+}
+
+.gif {
+    background-image: url('../public/pic/process.gif');
+}
+
+.centerGif {
+    background-image: url('../public/pic/centerAnimation.gif');
+    z-index: 1;
+}
