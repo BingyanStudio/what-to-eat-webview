@@ -29,11 +29,18 @@ function Index() {
         }
     }
 
+    const resultDisappear = (e) => {
+        console.log(e.pageX, e.pageY);
+        if (e.pageY < 200 || e.pageY > 650) {
+            setResult(false)
+        }
+    }
+
 
     return (
         // <div>这是首页</div>
 
-        <div className="Index">
+        <div className="Index" onClick={(e) => resultDisappear(e)}>
             {/* 标签筛选 */}
             <div className='select' onClick={listDown} >标签筛选</div>
             {dropDown &&
@@ -82,7 +89,7 @@ function Index() {
                 <div className={`center ${innerFlag ? 'centerGif' : 'centerStart'}`}></div>
             </div>
             {/* 弹窗 */}
-            {result && <div className='resultContainer'>
+            {result && <div className='resultContainer' >
                 <div className='result'></div>
             </div>}
             <div className='cat'></div>
