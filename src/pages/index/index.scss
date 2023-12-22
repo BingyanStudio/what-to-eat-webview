@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    // background-color: ;
+}
+
 
 .machine {
     width: 100vw;
@@ -25,16 +29,20 @@
 }
 
 .img {
-    background-image: url('../public/pic/start.png');
+    background-image: url('../../../public/pic/machine-start.png');
 }
 
 .gif {
-    background-image: url('../public/pic/process.gif');
+    background-image: url('../../../public/pic/machine-process.gif');
 }
 
 .centerGif {
-    background-image: url('../public/pic/centerAnimation.gif');
+    background-image: url('../../../public/pic/animation-noddles.gif');
     z-index: 1;
+}
+
+.centerStart {
+    background-image: url('../../../public/pic/center-start.png');
 }
 
 
@@ -117,4 +125,53 @@
         border-top: 5px black dashed;
         // background-color: pink;
     }
+}
+
+.resultContainer {
+    width: 350px;
+    height: 460px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    // transform: translate(-50%, -50%);
+    // transform: scale(1);
+    z-index: 4;
+    background-color: rgb(245, 228, 197);
+    border-radius: 40px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: big;
+    animation-duration: 1s;
+
+    .result {
+        width: 300px;
+        height: 410px;
+        border: 5px dashed black;
+        border-radius: 30px;
+
+    }
+
+    @keyframes big {
+        0% {
+            transform: scale(0, 0);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.cat {
+    background-image: url('../../../public/pic/cat.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 300px;
+    height: 300px;
 }
