@@ -31,8 +31,9 @@ function Index() {
     // 弹窗退出
     const resultDisappear = (e) => {
         console.log(e.pageX, e.pageY);
-        if (e.pageY < 200 || e.pageY > 650) {
-            setResult(false)
+        if ((e.pageY < 200 || e.pageY > 650) && result) {
+            setResult(false);
+            window.location.reload();
         }
     }
 
