@@ -46,6 +46,9 @@ body {
 }
 
 
+
+
+
 .select {
     width: 150px;
     height: 40px;
@@ -74,6 +77,7 @@ body {
     flex-direction: column;
     align-items: center;
 
+
     .title {
         width: 200px;
         height: 30px;
@@ -86,14 +90,9 @@ body {
         font-weight: 1000;
     }
 
-    input[type='checkbox'] {
-        // opacity: 0;
-    }
-
     .position,
     .seller {
         width: 200px;
-        // background-color: pink;
         margin-bottom: 10px;
         border-bottom: 1px solid black;
     }
@@ -102,7 +101,6 @@ body {
     .seller>.checkList {
         height: 40px;
         line-height: 40px;
-        // background-color: aqua;
     }
 
     .other>.checkList {
@@ -120,10 +118,9 @@ body {
         bottom: 0;
         width: 250px;
         height: 30px;
-        padding-right: 50px;
+        padding-right: 30px;
         text-align: right;
         border-top: 5px black dashed;
-        // background-color: pink;
     }
 }
 
